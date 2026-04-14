@@ -216,7 +216,7 @@ To download the experimental data and trained models, run the following command:
 . scripts/download_experimental_file.sh
 ```
 
-This will download the experimental data and trained models and save them to the current working directory. See the `datasets` for the experimental test ultrasound images (experimentally collected - 'experimental/test') and see the `models` folder for the trained StrainNet models 'pretrained/experimental'. 
+This will download the experimental data and trained models and save them to the current working directory. See the `datasets` for the experimental test ultrasound images (experimentally collected - experimental/test) and see the `models` folder for the trained StrainNet models pretrained/experimental. 
 
 ## Arguments
 
