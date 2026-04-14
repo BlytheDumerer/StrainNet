@@ -20,6 +20,7 @@ StrainNet is a deep learning based method for predicting strain from images
   - [Arguments](#arguments-1)
   - [Evaluating StrainNet on the synthetic test cases](#evaluating-strainnet-on-the-synthetic-test-cases)
 - [Applying StrainNet to experimental images](#applying-strainnet-to-experimental-images)
+  - [Downloading StrainNet trained models and experimental data](#downloading-StrainNet-trained-models-and-experimental-data)
   - [Arguments](#arguments-2)
   - [Applying StrainNet to human flexor tendons *in vivo*](#applying-strainnet-to-human-flexor-tendons-in-vivo)
 - [Retraining StrainNet further with experimental images](#retraining-strainnet-further-with-experimental-images)
@@ -204,6 +205,18 @@ python apply2experimental.py --model path/to/trained/model --experimental-data p
 Replace path/to/trained/model with the actual path to the trained StrainNet model, and path/to/experimental/data with the actual path to the experimental data.
 
 The apply2experimental.py script will output the predicted strains to the terminal and/or save them to a file, depending on the specified command line arguments.
+
+## Downloading StrainNet trained models and experimental data
+
+To download the experimental data and trained model for this project, you can use the [`download_experimental_files.sh`](scripts/download_experimental_file.sh) script. This script will download the experimental data and trained models from a remote server and save them to your local machine.
+
+To download the experimental data and trained models, run the following command:
+
+```
+. scripts/download_experimental_file.sh
+```
+
+This will download the experimental data and trained models and save them to the current working directory. See the `datasets` for the experimental test ultrasound images (experimentally collected - experimental/test) and see the `models` folder for the trained StrainNet models pretrained/experimental. 
 
 ## Arguments
 
